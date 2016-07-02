@@ -1,0 +1,74 @@
+
+		/**	style used for both examples **/
+
+		.menu { 
+			height: 35px;
+			display: block;
+		}
+
+		.menu ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.menu ul li {
+			/* width and height of the menu items */  
+			float: left;
+			overflow: hidden;		
+			text-align: center;
+			line-height: 35px;
+		}
+
+		.menu ul li a {
+			/* must be postioned relative  */ 
+			position: relative;
+			display: block;
+			width: 90px;
+			height: 35px;
+			font-family:"Î¢ÈíÑÅºÚ";
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.menu ul li a span {
+			/* all layers will be absolute positioned */
+			position: absolute;
+			left: 0;
+			width: 90px;
+		}
+
+		.menu ul li a span.out {
+			top: 0px;
+		}
+
+		.menu ul li a span.over,
+		.menu ul li a span.bg {
+			/* hide */  
+			top: -35px;
+		}
+
+		/** 1st example **/
+
+		#menu {
+			
+		}
+
+		#menu ul li a {
+			color: #fff;
+			overflow: hidden;	
+		}
+
+		#menu ul li a span.over {
+			color: #333;
+		}
+
+		#menu ul li span.bg {
+			/* height of the menu items */  
+			height: 35px;
+			background: url('../img/bg_over.gif') center center no-repeat;
+		}

@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>物流管理系统</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Erwin Aligam - styleshout.com" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" href="../style/webstyle.css" type="text/css" />
+<script type="text/javascript"  src="../scripts/Calendar4.js"></script>
+
+<script type="text/javascript">
+	function showsubmenu(sid)
+	{
+		whichEl = eval("submenu" + sid);
+		if (whichEl.style.display == "none")
+		{
+			eval("submenu" + sid + ".style.display=\"\";");
+		}
+		else
+		{
+			eval("submenu" + sid + ".style.display=\"none\";");
+		}
+	}
+	function showSelect(){
+ 	 	document.getElementById('reciver').style.display = "";
+  		document.getElementById('reciveraddr').style.display="";
+  		document.getElementById('reciverphone').style.display="";
+  		document.getElementById('reciverpost').style.display="";
+  	}
+ 	function showNo(){
+		  document.getElementById('reciver').style.display = "none";
+  		document.getElementById('reciveraddr').style.display="none";
+  		document.getElementById('reciverphone').style.display="none";
+  		document.getElementById('reciverpost').style.display="none";
+  	}
+</script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header">			
+		<h1 id="logo-text"><a href="index.html" title="">物流</a></h1>		
+		<p id="slogan">Logistics Manage System  ...</p>	
+		
+		<div id="top-menu">
+			<p>Admin | <a href="index.html">Login</a></p>
+		</div>			
+	</div>
+	<div  id="nav">
+		<ul><li id="current"><a href="index.html">客服中心</a>		</li>
+		<li><a href="../dispatch/dispatch.html">调度中心</a></li>
+		<li><a href="../substation/substation.html"> 分站管理 </a></li>
+		<li><a href="../storeroom/storeroom.html"> 库房管理 </a></li>
+		<li><a href="../delivery/delivery.html">配送中心</a></li>
+		<li><a href="../financial/financial.html">财务管理</a></li></ul>	
+		
+	</div>					
+	<div id="content">
+	 <div class="header-breadcrumbs">
+        <ul>
+          <li><a href="#">客服中心</a></li>
+          <li><a href="#">订单管理</a></li>
+          <li><a href="#">订购</a></li>
+          <li>结束订购</li>
+        </ul>
+      </div>
+		<div id="main">
+			<div class="sidebox" >	
+				<h1 class="clear">操作</h1>
+				<ul class="sidemenu">
+					<li><a href="cmanage.html" class="top">客户管理</a></li>
+					<li><a href="omanage.html" >订单管理</a></li>
+					<li><a href="javascript:showsubmenu(1);">相关查询</a>
+						<ul id="submenu1" class="submenustyle">
+							<li><a href="queryorder.html">订单信息查询</a></li>
+							<li><a href="#">工作量查询</a></li>
+						</ul>
+					</li>
+				</ul>	
+			</div>	
+		</div>
+		<div id="sidebar">
+			<form action="#" method="post" id="commentform">		
+								
+				<p>	
+					<label for="name">收货人(必填)</label><br />
+					<input id="name" name="name" value="乔伟" type="text" tabindex="1" />
+				</p>
+			
+				<p>
+					<label for="email">送货地址(必填)</label><br />
+					<input id="email" name="email" value="辽宁沈阳" type="text" tabindex="2" />
+				</p>
+				
+				<p>
+					<label for="website">收货人电话(必填)</label><br />
+					<input id="website" name="website" value="13840431091" type="text" tabindex="3" />
+				</p>
+				<p>
+				</p>	
+				<p>
+					<label for="website">要求完成日期(必填)</label><br />
+					<input id="website" name="website" value="" type="text" tabindex="6" onclick="MyCalendar.SetDate(this)"/>
+				</p>
+				<p>
+					<label for="website">订单生成日期(必填)</label><br />
+					<input id="website" name="website" value="" type="text" tabindex="7" onclick="MyCalendar.SetDate(this)" />
+				</p>
+				<p>
+					<label for="website">收货人邮编</label><br />
+					<input id="website" name="website" value="236300" type="text" tabindex="4" />
+				</p>
+				<p>
+					<label for="subject">货物投递分站</label><br />
+	         		<select id="subject" name="subject" tabindex="1">
+	           			<option value="0">--请选择--</option>
+	          			<option value="1">分站一</option>
+	          			<option value="2">分站二</option>
+	         		</select>
+				</p>
+				<p>
+					<label for="subject">需要发票</label><br />
+	         		<select id="subject" name="subject" tabindex="1">
+	           			<option value="1">是</option>
+	          			<option value="2">否</option>
+	         		</select>
+				</p>
+				<p>
+					<label for="subject">订单类型</label><br />
+	         		<select id="subject" name="subject" tabindex="1" onchange="if(this.options[this.selectedIndex].value=='2'){showSelect();}else{showNo()}">
+	           			<option value="1">新订</option>
+	          			<option value="2" >异地收费</option>
+	         		</select>
+				</p>
+				<p id="reciver" style="display:none;">
+					<label for="website">付款人</label><br />
+					<input id="website" name="website" value="" type="text" tabindex="9" />
+				</p>
+				<p id="reciveraddr" style="display:none;">
+					<label for="website">付款人地址</label><br />
+					<input id="website" name="website" value="" type="text" tabindex="9" />
+				</p>
+				<p id="reciverphone" style="display:none;">
+					<label for="website">付款人电话</label><br />
+					<input id="website" name="website" value="" type="text" tabindex="9" />
+				</p>
+				<p id="reciverpost" style="display:none;">
+					<label for="website">付款人邮编</label><br />
+					<input id="website" name="website" value="" type="text" tabindex="9" />
+				</p>
+				<p class="no-border">
+					<input class="button" type="submit" value="生成订单" tabindex="10" />  
+					<input class="button" type="reset" value="返回" tabindex="11" onclick="window.location.href='checkorder.html'"/>       		
+				</p>
+					
+			</form>				
+		</div>		
+	</div>
+	<div id="footer">
+		<p>
+		&copy;软0906
+	 	</p>			
+	</div>
+</div>
+</body>
+</html>

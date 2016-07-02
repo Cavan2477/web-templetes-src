@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>物流管理系统</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Erwin Aligam - styleshout.com" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" href="../style/webstyle.css" type="text/css" /><base />
+<script type="text/javascript">
+	function showsubmenu(sid)
+	{
+		whichEl = eval("submenu" + sid);
+		if (whichEl.style.display == "none")
+		{
+			eval("submenu" + sid + ".style.display=\"\";");
+		}
+		else
+		{
+			eval("submenu" + sid + ".style.display=\"none\";");
+		}
+	}
+</script>
+</head>
+
+
+<body>
+<div id="wrap">
+	<div id="header">			
+		<h1 id="logo-text"><a href="index.html" title="">物流</a></h1>		
+		<p id="slogan">Logistics Manage System  ...</p>	
+		
+		<div id="top-menu">
+			<p>Admin | <a href="index.html">Login</a></p>
+		</div>			
+	</div>
+	<div  id="nav">
+		<ul><li ><a href="../service/index.html">客服中心</a></li>
+		<li ><a href="../dispatch/dispatch.html">调度中心</a></li>
+		<li><a href="../substation/substation.html"> 分站管理 </a></li>
+		<li><a href="../storeroom/storeroom.html"> 库房管理 </a></li>
+		<li id="current"><a href="#">配送中心</a></li>
+		<li><a href="../financial/financial.html">财务管理</a></li></ul>		
+	</div>					
+	<div id="content">
+	 <div class="header-breadcrumbs">
+        <ul>
+          <li><a href="#">配送中心</a></li>
+          <li>商品中心</li>
+          <li><a href="#">一级分类</a></li>
+          <li>下属商品</li>
+        </ul>
+      </div>
+		<div id="main">
+			<div class="sidebox" >	
+				<h1 class="clear">操作</h1>
+				<ul class="sidemenu">
+					<li><a href="javascript:showsubmenu(1);" class="top">商品中心</a>
+						<ul id="submenu1" class="submenustyle">
+							<li><a href="fsort.html">一级分类</a></li>
+							<li><a href="ssort.html">二级分类</a></li>
+							<li><a href="pmanage.html">商品管理</a></li>
+						</ul>
+					</li>
+					<li><a href="dstoreroom.html">库房管理</a></li>
+					<li><a href="suppliermanage.html">供应商管理</a></li>
+				</ul>	
+			</div>	
+		</div>
+				
+		<div id="sidebar">
+			<form action="#" method="post" id="contactform" style="margin:0 0 0 10px;padding:0;background: none;border:none;">		
+				<p style="border:none;margin:0;padding:0;background: none;">
+         		<select id="subject" name="subject" tabindex="1" style="padding:3px;">
+           			<option value="0">一级分类</option>
+          	 		<option value="1" selected="selected">服装</option>
+         		</select>
+				<input id="name" name="name" value="请输入查询内容" type="text" tabindex="2" style="width:200px;padding:3px;" onclick="this.value='';"/>
+				<input class="button" type="submit" value="查询" tabindex="3" style="height:24px;margin:5px 0;" />
+				<input class="button" type="button" value="返回" tabindex="3" style="height:24px;margin:5px 0;" onclick="window.history.go(-1);"/>
+				</p>
+			</form>		
+			
+			<table>
+				<tr>
+					<th>商品编号</th>
+					<th>商品名称</th>
+					<th>一级分类</th>
+					<th>计量</th>
+					<th>单价</th>
+					<th>相关操作</th>
+				</tr>
+				<tr>
+					<td><a href="#">A0001</a></td>
+					<td>西服</td>
+					<td>服装</td>
+					<td>件</td>
+					<td>500</td>
+					<td><a href="#" onclick="return confirm('确定移除？');">移除</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">A0001</a></td>
+					<td>西服</td>
+					<td>服装</td>
+					<td>件</td>
+					<td>500</td>
+					<td><a href="#" onclick="return confirm('确定移除？');">移除</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">A0001</a></td>
+					<td>西服</td>
+					<td>服装</td>
+					<td>件</td>
+					<td>500</td>
+					<td><a href="#" onclick="return confirm('确定移除？');">移除</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">A0001</a></td>
+					<td>西服</td>
+					<td>服装</td>
+					<td>件</td>
+					<td>500</td>
+					<td><a href="#" onclick="return confirm('确定移除？');">移除</a></td>
+				</tr>
+				<tr style="height:22px;">
+					<td colspan="6">
+						<div style="float:left;">
+							<a href="neworder.html">全部移除</a>&nbsp;&nbsp;
+							<a href="neworder.html">添加商品</a>
+						</div>
+						<div style="float:right;">
+							<a href="#">上一页</a>
+							<a href="#">下一页</a>
+						</div>
+						<div style="float:right;margin-right:40px">
+								当前第1/10页 &nbsp;&nbsp;&nbsp;&nbsp;每页25条记录
+								&nbsp;&nbsp;&nbsp;&nbsp;共250条记录
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>		
+	</div>
+	<div id="footer">
+		<p>
+		&copy;软0906
+	 	</p>			
+	</div>
+
+</div>
+
+</body>
+</html>

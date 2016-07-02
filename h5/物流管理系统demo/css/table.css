@@ -1,0 +1,111 @@
+         #products1 { 
+		border-collapse:collapse;
+		border:1px solid #C1DAD7;
+		}
+        #products1 h4 { margin:0px; padding:0px;}
+        #products1 img { float:right;}
+        #products1 th {
+			font-size:13px;
+			color: #4f6b72;
+		
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-align: left;
+			padding: 3px 3px 3px 3px;
+			background: #CAE8EA ;
+		 
+		 }
+        #products1 td 
+		{ 
+			padding: 3px 3px 3px 5px;
+			color: #4f6b72;
+			border-bottom:1px solid #C1DAD7;
+		
+		}
+        #products1 tr.odd td { background: #F5FAFA; repeat-x scroll center left; cursor:pointer; }
+        #products1 div.arrow { background:transparent url(../img/arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+        #products1 div.up { background-position:0px 0px;}
+        #products { 
+		border-collapse:collapse;
+		border:1px solid #C1DAD7;
+		}
+        #products h4 { margin:0px; padding:0px;}
+        #products img { float:right;}
+        #products th {
+			font-size:13px;
+			color: #4f6b72;
+		
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-align: left;
+			padding: 3px 3px 3px 3px;
+			background: #CAE8EA ;
+		 
+		 }
+        #products td 
+		{ 
+			padding: 3px 3px 3px 5px;
+			color: #4f6b72;
+			border-bottom:1px solid #C1DAD7;
+		
+		}
+        #products tr.odd td { background: #F5FAFA; repeat-x scroll center left; cursor:pointer; }
+        #products div.arrow { background:transparent url(../img/arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+        #products div.up { background-position:0px 0px;}
+
+#tableList{
+border: 1px solid #C1DAD7;
+}
+#tableList tfoot tr td
+{
+background: ;
+font-size:12px;
+border-top: 1px solid #C1DAD7;
+}
+#tableList th {
+	font-size:13px;
+	color: #4f6b72;
+
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 3px 3px 3px 3px;
+	background: #CAE8EA ;
+}
+
+#tableList tr{
+	background: #fff;
+}
+#tableList td{
+
+	padding: 3px 3px 3px 5px;
+	color: #4f6b72;
+}
+#tableList1{
+border: 1px solid #C1DAD7;
+}
+#tableList1 tfoot tr td
+{
+background: ;
+font-size:12px;
+border-top: 1px solid #C1DAD7;
+}
+#tableList1 th {
+	font-size:13px;
+	color: #4f6b72;
+
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 3px 3px 3px 3px;
+	background: #CAE8EA ;
+}
+
+#tableList1 tr{
+	background: #fff;
+}
+#tableList1 td{
+
+	padding: 3px 3px 3px 5px;
+	color: #4f6b72;
+}

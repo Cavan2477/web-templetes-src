@@ -1,0 +1,129 @@
+/* CSS Document */
+/* Common */
+body{
+
+
+
+font-family:"Î¢ÈíÑÅºÚ";
+color:#333;
+font-size:13px;
+}
+
+.mark{ color:#FF0000
+}
+.a_page{
+	color:#4f6b72;
+}
+
+.span_top{
+font-size:16px;
+font-weight:bold;
+color:#506F70;
+
+}
+.span_main{
+font-size:14px;
+color:#506F70;
+}
+.span_bold{
+font-size:13px;
+font-weight:bold;
+color:#333;
+}
+.lbutton{
+background-image:url(../img/lbutton.png);
+width:92px;
+height:23px;
+border:0px;
+color:#333;
+}
+.button{
+background-image:url(../img/button.jpg);
+
+width:50px;
+height:23px;
+border:0px;
+color:#333;
+}
+.logbutton{
+background-image:url(../img/button.png);
+width:50px;
+height:23px;
+border:0px;
+color:#333;
+}
+a {
+	color: #c75f3e;
+}
+
+span{
+color:#EFF;  text-align:center;
+}
+label{
+color:#EFF; font-size:13px; padding-right:30px; height:20px;
+}
+
+.span_title{
+font:"Î¢ÈíÑÅºÚ";
+font-size:18px;
+font-weight:bold;
+color:#506F70;
+padding-left:20px;
+}
+.input_text{ width:110px; height:15px;}
+.input_small{ width:70px; height:15px;}
+/*index.html */
+
+#main{
+width:800px; height:1300px; background-color:#FFFFFF; position:absolute; left:200px;
+}
+#top{
+width:800px; height:106px;
+padding-bottom:1px;
+}
+#left{
+width:170px; height:1100px; float:left; color:#333;
+background:FFF;
+border-right:#D7EEF3 1px solid;
+}
+#right{
+width:629px; height:1100px; float:right;
+background:url(../img/banner_bg.gif); background-repeat:repeat-x;
+}
+#bottom{
+width:800px; height:50px;float:left; padding-top:1px;
+background:#FFF;
+}
+#top_font{
+ float:right;height:50px;
+ }
+ #top_font a{
+ color:#eee; text-decoration:none;
+ }
+ .img_label{
+ padding-right:25px;
+ }
+ #div_label{
+ color:#333; height:26px; cursor:hand; font-size:14px; width:165px;
+ background-image:url(../img/icon.gif);}
+  #div_label_up{
+ color:#506F70; height:26px; cursor:hand; font-size:14px; width:165px;
+ background-image:url(../img/icon_up.gif);}
+ #div_login{
+ width:160px; height:250px;padding-top:30px; padding-left:20px; background-image:url(../img/login.png); background-repeat:no-repeat;}
+#div_info{
+ width:160px; height:120px;padding-top:30px; padding-left:20px; background-image:url(../img/info.png); background-repeat:no-repeat;}
+ #fright{
+  width:628px; height:1100px;margin-top:30px;
+  }
+/*End of index.html */
+#div_center{
+height:370px;
+}
+#div_top{
+
+}
+
+.div_choose{
+width:160px; padding-top:10px; padding-left:5px;
+cursor:hand;}
